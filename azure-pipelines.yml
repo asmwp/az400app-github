@@ -37,6 +37,11 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: WhiteSource@21
+  inputs:
+    cwd: '$(System.DefaultWorkingDirectory)'
+    projectName: 'az400app'
+
 - task: SonarCloudAnalyze@1
 
 - task: SonarCloudPublish@1
