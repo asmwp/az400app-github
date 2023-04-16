@@ -24,7 +24,7 @@ steps:
 
 - task: SonarCloudPrepare@1
   inputs:
-    SonarCloud: 'Sonar Cloud'
+    SonarCloud: 'myazureportaldevelopment_az400_token'
     organization: 'myazureportaldevelopmentsc'
     scannerMode: 'MSBuild'
     projectKey: 'myazureportaldevelopment_az400_key'
